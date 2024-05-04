@@ -1,1 +1,47 @@
+function isLarger(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else if (num1 < num2) {
+    return num2;
+  } else {
+    return num1;
+  }
+}
+console.log(isLarger(2, 3));
+console.log(isLarger(8, 5));
+
+function isSafeAirspeed(airspeed) {
+  if (airspeed >= 185 && airspeed <= 582) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isSafeAirspeed(455));
+console.log(isSafeAirspeed(769));
+
+function confirmAge(num) {
+  if (num < 0) {
+    return "Invalid age.";
+  } else if (num < 13) {
+    return "Too young to participate.";
+  } else if (num >= 13 && num <= 17) {
+    return "You are allowed to participate.";
+  } else if (num > 17) {
+    return "Too old to participate.";
+  } else {
+    return "Please enter a number.";
+  }
+}
+
+//Bonus
+console.log(confirmAge(-2));
+
+console.log(confirmAge(11));
+console.log(confirmAge(15));
+console.log(confirmAge(21));
+
+//Extra bonus
+console.log(confirmAge("h"));
 
